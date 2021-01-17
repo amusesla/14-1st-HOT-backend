@@ -11,6 +11,5 @@ urlpatterns = [
     path('/friendships/{int:user_id}/unfollow', UnFollowView.as_view()),
     path('/bookmark', BookmarkView.as_view()),
     path('/unbookmark', UnBookmarkView.as_view()),
-    path('/mypage', MyPageView.as_view()),
-    path('/sample/<int:post_id>', SampleView.as_view()),
+    path('/user_id', MyPageView.as_view()),
 ]
